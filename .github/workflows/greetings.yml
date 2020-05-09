@@ -1,0 +1,17 @@
+name: Greetings
+
+on: [pull_request, issues]
+
+jobs:
+  greeting:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/first-interaction@v1
+      with:
+        repo-token: ${{ secrets.GITHUB_TOKEN }}
+        issue-message: 'Hello There!
+Welcome to the unofficial, official discord channel for @shavayne#4006 
+PLease feel free to make yourself self at home. Just keep the appropriate stuff where it belongs :purple_heart:'
+        pr-message: 'Hello There!
+Welcome to the unofficial, official discord channel for @shavayne#4006 
+PLease feel free to make yourself self at home. Just keep the appropriate stuff where it belongs :purple_heart:'' first pr'
